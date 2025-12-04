@@ -66,7 +66,7 @@ public class UserController {
     public UserResponseDTO update(
             @PathVariable Long id,
             @Valid @RequestBody UserRequestDTO request) {
-
+/// iam sayu
         User updated = userService.updateUser(id, new User(request.getName()));
 
         return new UserResponseDTO(updated.getId(), updated.getName());
